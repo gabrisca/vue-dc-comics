@@ -2,10 +2,12 @@
   <div id="app">
     <HeaderComp />
     <Main />
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from './components/Footer.vue'
 import HeaderComp from './components/HeaderComp.vue'
 import Main from './components/Main.vue'
 
@@ -15,6 +17,7 @@ export default {
   components: {
     HeaderComp,
     Main,
+    Footer,
   }
 }
 </script>
