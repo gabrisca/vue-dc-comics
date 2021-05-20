@@ -17,5 +17,6 @@ export default {
     display: flex;
     align-items: center;
     height: 100px;
+    color: white;
   }
 </style>
