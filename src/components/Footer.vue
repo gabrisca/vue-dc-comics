@@ -104,27 +104,33 @@
         </li>
         <li>
           <a href="#">
-            <img src="../assets/img/footer-facebook.png" alt="logo facebook">
+            <img src="../assets/img/footer-facebook.png" alt="logo facebook" />
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="../assets/img/footer-twitter.png" alt="logo twitter">
+            <img src="../assets/img/footer-twitter.png" alt="logo twitter" />
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="../assets/img/footer-youtube.png" alt="logo youtube">
+            <img src="../assets/img/footer-youtube.png" alt="logo youtube" />
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="../assets/img/footer-pinterest.png" alt="logo pinterest">
+            <img
+              src="../assets/img/footer-pinterest.png"
+              alt="logo pinterest"
+            />
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="../assets/img/footer-periscope.png" alt="logo periscope">
+            <img
+              src="../assets/img/footer-periscope.png"
+              alt="logo periscope"
+            />
           </a>
         </li>
       </ul>
@@ -181,7 +187,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     .btn {
-
     }
     ul {
       display: flex;
@@ -197,7 +202,7 @@ footer {
           &:first-child {
             color: $brand-color;
           }
-      }
+        }
       }
     }
   }

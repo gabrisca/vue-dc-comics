@@ -8,10 +8,12 @@
     <div id="menu">
       <ul>
         <li  
-          v-for="(link, index) in links" :key="index"
+          v-for="(link, index) in links" 
+          :key="index"
+          @click.stop="setActive(index)"
+          :class="{'active': link.current}"
         >
           <a 
-          :class="{'active': link.current}"
           :href="link.url"
           >
           {{link.text}}
@@ -30,7 +32,7 @@ export default {
       links: [
         {
           text: 'caracters',
-          url: '#',
+          url: 'javascript:void(0)',
           current: false
         },
         {
@@ -78,9 +80,20 @@ export default {
           url: '#',
           current: false
         },
-      ]
+      ],
     }
-  }
+  },
+  mounted(){
+
+  },
+  methods: {
+    setActive(index) {
+      this.links.forEach((link) => {
+        link.current = false
+      })
+      this.links[index].current = true
+    }
+  },
 }
 </script>
 
@@ -105,20 +118,27 @@ export default {
       #menu {
         ul {
           display: flex;
+          align-items: center;
           flex-wrap: wrap;
           li {
             margin-left: 25px;
-              a {
-                color: #484D52;
-                text-decoration: none;
-                text-transform: uppercase;
-                &:hover {
+            height: 100px;
+            line-height: 100px;
+            cursor: pointer;
+            &.active {
+                  border-bottom: 4px solid $brand-color;
+                  a {
+                    color: $brand-color;
+                  }
+                }
+            &:hover a{
                   color: $brand-color;
                 }
-                &.active {
-                  padding-bottom: 36px;
-                  border-bottom: 4px solid $brand-color;
-                }
+              a {
+                color: #484D52;
+                height: 100%;
+                text-decoration: none;
+                text-transform: uppercase;
               }
           }
         }
