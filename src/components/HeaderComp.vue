@@ -120,7 +120,6 @@ export default {
         ul {
           display: flex;
           align-items: center;
-          flex-wrap: wrap;
           li {
             margin-left: 25px;
             height: 100px;
