@@ -5,33 +5,33 @@
         <ul class="comics">
           <h3>DC COMICS</h3>
           <li>
-            <a href="#">link</a>
+            <a href="#">characters</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">comics</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">movies</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">TV</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">games</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">videos</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">news</a>
           </li>
           <ul class="shop">
             <h3>SHOP</h3>
             <li>
-              <a href="#">link</a>
+              <a href="#">shop DC</a>
             </li>
             <li>
-              <a href="#">link</a>
+              <a href="#">shop DC collectibles</a>
             </li>
           </ul>
         </ul>
@@ -39,56 +39,56 @@
         <ul class="dc">
           <h3>DC</h3>
           <li>
-            <a href="#">link</a>
+            <a href="#">Terms Of Use</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">Privacy policy (new)</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">ad choices</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">advertising</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">jobs</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">subscriptions</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">talent workshops</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">CPSC certificates</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">ratings</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">shop help</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">contact us</a>
           </li>
         </ul>
 
         <ul class="sites">
           <h3>SITES</h3>
           <li>
-            <a href="#">dc</a>
+            <a href="#">DC</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">MAD magazine</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">DC kids</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">DC universe</a>
           </li>
           <li>
-            <a href="#">link</a>
+            <a href="#">DC power visa</a>
           </li>
         </ul>
       </div>
@@ -146,7 +146,6 @@ export default {};
 // importo le variabili
 @import "../assets/style/vars.scss";
 footer {
-  background-color: honeydew;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../assets/img/footer-bg.jpg);
@@ -169,11 +168,13 @@ footer {
           color: white;
         }
         li {
+          margin-bottom: 4px;
           a {
             color: #6c7b7c;
             text-decoration: none;
+            text-transform: capitalize;
             &:hover {
-              color: $brand-color;
+              color: white;
             }
           }
         }
@@ -187,6 +188,15 @@ footer {
     justify-content: space-between;
     align-items: center;
     .btn {
+      border: 2px solid $brand-color;
+      padding: 10px;
+      cursor: pointer;
+      &:hover {
+        background-color: #8b7f7f17;
+      }
+      a {
+        color: white;
+      }
     }
     ul {
       display: flex;
@@ -194,13 +204,17 @@ footer {
       li {
         margin-left: 20px;
         &:first-child {
-          // line-height: 100px;
           font-size: 1.2em;
         }
         a {
           height: 100%;
           &:first-child {
             color: $brand-color;
+          }
+          img {
+            &:hover{
+              filter: brightness(1.8);
+            }
           }
         }
       }

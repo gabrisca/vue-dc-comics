@@ -87,6 +87,7 @@ export default {
 
   },
   methods: {
+    // function active al click
     setActive(index) {
       this.links.forEach((link) => {
         link.current = false
