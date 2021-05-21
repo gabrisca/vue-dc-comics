@@ -161,8 +161,8 @@ footer {
       padding-top: 20px;
       padding-bottom: 40px;
       ul {
-        flex-basis: 150px;
-        margin-right: 10px;
+        flex-basis: 180px;
+        margin-right: 20px;
         h3 {
           margin: 10px 0;
           color: white;
