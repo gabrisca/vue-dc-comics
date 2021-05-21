@@ -90,7 +90,6 @@ export default {
   header {
     height: 100px;
     background-color: #FFFFFF;
-    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,6 +105,7 @@ export default {
       #menu {
         ul {
           display: flex;
+          flex-wrap: wrap;
           li {
             margin-left: 25px;
               a {
