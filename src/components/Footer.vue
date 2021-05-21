@@ -212,7 +212,7 @@ footer {
             color: $brand-color;
           }
           img {
-            &:hover{
+            &:hover {
               filter: brightness(1.8);
             }
           }

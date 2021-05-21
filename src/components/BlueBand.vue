@@ -1,21 +1,22 @@
 <template>
   <div id="strip">
-    
-      <div class="wrapper">
-        <div
-          class="commercial"
-          v-for="(commercial, index) in commercials"
-          :key="index"
-        >
-          <a href="#">
-            <img :src="commercial.image" :alt="commercial.text" />
-            <span>
-              {{ commercial.text }}
-            </span>
-          </a>
-        </div>
+    <div class="wrapper">
+      <div
+        class="commercial"
+        v-for="(commercial, index) in commercials"
+        :key="index"
+      >
+        <a href="#">
+          <img 
+          :src="commercial.image" 
+          :alt="commercial.text" 
+          />
+          <span>
+            {{ commercial.text }}
+          </span>
+        </a>
       </div>
-   
+    </div>
   </div>
 </template>
 
@@ -52,29 +53,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// importo le variabili
+@import "../assets/style/vars.scss";
 #strip {
-
   padding: 40px 230px;
-  background-color: #0c82f9;
-    .wrapper {
+  background-color: $brand-color;
+  .wrapper {
+    display: flex;
+    .commercial {
+      flex-basis: calc(100% / 5);
+      a {
         display: flex;
-      .commercial {
-        flex-basis: calc(100% / 5);
-        a {
-          display: flex;
-          align-items: center;
-          color: white;
-          img {
-            height: 50px;
-            margin-right: 5px;
-          }
-          span {
-            text-transform: uppercase;
-            font-size: 0.8em;
-          }
+        align-items: center;
+        color: white;
+        img {
+          height: 50px;
+          margin-right: 5px;
+        }
+        span {
+          text-transform: uppercase;
+          font-size: 0.8em;
         }
       }
     }
-  
+  }
 }
 </style>
