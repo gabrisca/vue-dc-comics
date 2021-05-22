@@ -12,7 +12,6 @@ export default {
 
 <style lang="scss" scoped>
   #jumbotron {
-    background-color: hotpink;
     background-image: url(../assets/img/jumbotron.jpg);
     background-repeat: no-repeat;
     background-size: cover;
