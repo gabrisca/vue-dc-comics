@@ -31,7 +31,7 @@ export default {
     return {
       links: [
         {
-          text: 'caracters',
+          text: 'characters',
           url: 'javascript:void(0)',
           current: false
         },
